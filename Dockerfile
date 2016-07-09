@@ -1,6 +1,4 @@
 FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
-MAINTAINER lbernard@gmail.com
-
 
 # add setuptools, which is needed for pip installs
 RUN apt-get update && apt-get install -y --no-install-recommends \
