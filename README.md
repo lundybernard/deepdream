@@ -10,8 +10,14 @@ And used basically the same Dockerfile as caffe used for their gpu build, with s
 
 Also added jupyter, and copied over files for the notebook (for testing)
 
-Build: `nvidia-docker build -t caffe-cuda8.0-cudnn5-ubuntu16.04 .`
-Run: `nvidia-docker run --rm -it -p 8888:8888 caffe-cuda8.0-cudnn5-ubuntu16.04`
+-Build: `nvidia-docker build -t caffe-cuda8.0-cudnn5-ubuntu16.04 .`
+-Run: `nvidia-docker run --rm -it -p 8888:8888 caffe-cuda8.0-cudnn5-ubuntu16.04`
+
+### TODO:
+- Mount an external volume for images, and notebooks [dockervolumes](https://docs.docker.com/engine/tutorials/dockervolumes/)
+- Update from python2.7 to python3.5
+- Build Anaconda package for caffe
+    - make sure dependencies are compiled with cuda options
 
 
 
